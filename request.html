@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>طلب تصميم | DesignHub</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo">
+        🎨 <span>DesignHub</span>
+    </div>
+
+    <button class="menu-btn" onclick="toggleMenu()">
+        ☰
+    </button>
+
+    <nav id="nav-menu">
+        <a href="home.html">الرئيسية</a>
+        <a href="gallery.html">المعرض</a>
+        <a href="request.html">طلب تصميم</a>
+        <a href="contact.html">تواصل</a>
+    </nav>
+
+</header>
+
+
+<section class="request-box">
+
+    <h1>اطلب تصميمك الآن</h1>
+
+    <p class="subtitle">
+        املأ البيانات وسنتواصل معك لتنفيذ تصميمك
+    </p>
+
+
+    <form action="send.php" method="POST">
+
+        <label>الاسم</label>
+        <input 
+        type="text" 
+        name="name"
+        placeholder="اكتب اسمك"
+        required>
+
+
+        <label>البريد الإلكتروني</label>
+        <input 
+        type="email"
+        name="email"
+        placeholder="example@email.com"
+        required>
+
+
+        <label>رقم الهاتف</label>
+        <input 
+        type="tel"
+        name="phone"
+        placeholder="09xxxxxxxx">
+
+
+        <label>نوع التصميم</label>
+
+        <select name="design">
+
+            <option>شعار Logo</option>
+            <option>بوستر Poster</option>
+            <option>هوية بصرية</option>
+            <option>منشور سوشيال ميديا</option>
+            <option>تصميم آخر</option>
+
+        </select>
+
+
+        <label>وصف التصميم</label>
+
+        <textarea 
+        name="description"
+        rows="5"
+        placeholder="اكتب تفاصيل التصميم..."></textarea>
+
+
+        <button type="submit" class="login-btn">
+            إرسال الطلب
+        </button>
+
+
+    </form>
+
+</section>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

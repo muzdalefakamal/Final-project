@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>إنشاء حساب | DesignHub</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<header class="header">
+
+    <div class="logo">
+        🎨 <span>DesignHub</span>
+    </div>
+
+    <button class="menu-btn" onclick="toggleMenu()">
+        ☰
+    </button>
+
+
+    <nav id="nav-menu">
+
+        <a href="home.html">الرئيسية</a>
+        <a href="gallery.html">المعرض</a>
+        <a href="request.html">طلب تصميم</a>
+        <a href="contact.html">تواصل</a>
+
+    </nav>
+
+</header>
+
+
+
+<section class="login-box">
+
+
+<h1>إنشاء حساب</h1>
+
+
+<p class="subtitle">
+سجل الآن وابدأ طلب تصاميمك
+</p>
+
+
+
+<form action="register.php" method="POST">
+
+
+<label>الاسم الكامل</label>
+
+<input 
+type="text"
+name="name"
+placeholder="اكتب اسمك"
+required>
+
+
+
+<label>البريد الإلكتروني</label>
+
+<input 
+type="email"
+name="email"
+placeholder="example@email.com"
+required>
+
+
+
+<label>رقم الهاتف</label>
+
+<input 
+type="tel"
+name="phone"
+placeholder="09xxxxxxxx">
+
+
+
+<label>كلمة المرور</label>
+
+<input 
+type="password"
+name="password"
+placeholder="اكتب كلمة المرور"
+required>
+
+
+
+<label>تأكيد كلمة المرور</label>
+
+<input 
+type="password"
+name="confirm_password"
+placeholder="أعد كتابة كلمة المرور"
+required>
+
+
+
+<button class="login-btn" type="submit">
+إنشاء الحساب
+</button>
+
+
+</form>
+
+
+
+<div class="register">
+
+<p>
+لديك حساب بالفعل؟
+<a href="login.html">تسجيل الدخول</a>
+</p>
+
+</div>
+
+
+
+</section>
+
+
+
+<script src="js/script.js"></script>
+
+
+</body>
+
+</html>
